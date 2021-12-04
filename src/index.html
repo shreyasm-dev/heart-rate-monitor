@@ -55,6 +55,8 @@
 						<small>Tap the circle to start/stop</small>
 						<br>
 						<small>Disclaimer: this should not be used as medical advice. Results can be very high, very low, or very irregular.</small>
+						<br>
+						<small>See the menu at the bottom of the screen for more help</small>
 					</div>
 				</header>
 
@@ -71,18 +73,32 @@
 					</section>
 				</main>
 
-				<div style='text-align:center'>
+				<footer>
+					<button class="icon-button menu-toggle">
+						<span>Menu</span>
+					</button>
+					<nav class="menu" style="display: none">
+						<ul>
+							<li>
 								<a
 									href="#instructions"
 									data-modal-name="instructions"
 									>Instructions</a
 								>
-					<br>
+							</li>
+							<li>
 								<a href="#about" data-modal-name="about"
-									>Credits</a
+									>About</a
 								>
-					
-				</div>
+							</li>
+							<li class="debug-menu-item" style="display: none">
+								<a href="#about" data-modal-name="debug"
+									>Debug</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</footer>
 			</div>
 
 			<div class="modal" data-name="instructions">
